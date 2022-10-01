@@ -1,0 +1,97 @@
+.preview{
+    position: relative;
+    width: 190px;
+    height: 100px;
+    border: 5px solid teal;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    margin: 16px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    user-select: none;
+}
+
+.closeBoard{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: medium;
+    padding: 2px 6px;
+    display: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.preview:hover .closeBoard{
+    display: block;
+}
+
+#addBoard{
+    position: relative;
+    top: -5px;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    position: relative;
+}
+
+.board{
+    position: relative;
+    left: 5%;
+    background-color: white;
+    top: 30px;
+    width: 90%;
+    height: calc(100vh - 100px);
+    border: 8px solid teal;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+#colorPicker{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 5px;
+    background-color: white;
+}
+
+#colorPicker .colors{
+    height: 26px;
+    width: 26px;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+#eraser{
+    font-size: 20px;
+    margin: 3px 7px;
+}
+
+.show{
+    display: none;
+}
+
+#currentWidth{
+    margin-right: 8px;
+}
+
+#savePdf{
+    padding: 4px;
+}
+
+@media screen and (max-width:600px){
+    #penWidth{
+        width: 100px;
+    }
+}
